@@ -1,46 +1,77 @@
-body {
-  background-color: #0a0a0a;
-  font-family: "Consolas", "Courier New", "Lucida Console", monospace;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  animation: glitch 1s infinite linear;
-  background-image: url('https://i.imgur.com/GmDlPQj.png');
-  animation: rain 1s linear infinite;
+/* Set up the Matrix rain effect */
+
+.matrix-rain {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
 }
 
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+.code-wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
 
-h1 {
-  font-size: 2rem;
+code {
+  font-family: Courier, monospace;
+  font-size: 18px;
+  text-align: left;
+  display: block;
+  line-height: 1.2;
+  height: 100%;
+  background-color: transparent;
 }
 
-nav ul {
-  list-style: none;
+/* Create the Matrix rain effect */
+
+code:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.1;
 }
 
-@keyframes glitch {
-  2%, 64% {
-    transform: translate(2px, 0) skew(0deg);
-  }
-  4%, 60% {
-    transform: translate(-2px, 0) skew(0deg);
-  }
-  62% {
-    transform: translate(0, 0) skew(5deg);
-  }
+code:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  color: #00FF41;
+  animation: matrix-rain 2s linear infinite;
 }
-@keyframes rain {
+
+@keyframes matrix-rain {
   0% {
-    background-position: 0px 0px, 0px 0px;
+    transform: translateY(0);
   }
   100% {
-    background-position: 500px 1000px, 1000px 2000px;
+    transform: translateY(-100%);
   }
+}
+
+/* Style the container for the portfolio content */
+
+.container {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  font-family: sans-serif;
+  color: white;
 }
