@@ -4,7 +4,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  //animation: glitch 1s infinite linear;
+  animation: glitch 1s infinite linear;
   background-image: url('https://i.imgur.com/GmDlPQj.png');
   animation: rain 1s linear infinite;
 }
