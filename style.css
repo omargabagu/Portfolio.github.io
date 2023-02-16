@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+
+body {
+  
+  height: 100%;
+}
+a {
+  color: #D6D3C8;
+}
+
+nav ul {
+  color: #D6D3C8;
+  font-family: "Consolas", "Courier New", "Lucida Console", monospace;
+  list-style: none;
+  display: flex;
+  gap: 10%;
+  justify-content: center; 
+}
+
+header {
+  position: fixed;
+  color: #6A7E72;
+  background: black;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.contenido {
+  color: #D6D3C8;
+  margin-top: 70px;
+  font-family: "Consolas", "Courier New", "Lucida Console", monospace;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-inline: auto;
+  max-width: 768px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  
+}
+
+
+.texto input{
+  width: 150px;
+  padding: 7px;
+  background: black;
+  color: #D6D3C8;
+  border: 1px solid #6A7E72;
+  margin-top: 15px; 
+  justify-content: space-around;
+}
+
+
+
+textarea {
+  background: black;
+  color: #6A7E72;
+  padding: 5px;
+  resize: none;
+}
+input {
+  background: black;
+  color: #6A7E72;
+  padding: 5px;
+  resize: none;
+  font-family: "Consolas", "Courier New", "Lucida Console", monospace;
+}
+
+.area p {
+  margin: 5px;
+}
+
+footer {
+  position: relative;
+  bottom: auto;
+  width: 100%;
+  background: black;
+  color: #6A7E72;
+  height: 25px;
+  padding-top: 3px;
+}
+img{
+  width: 50%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+/*.imgcont{
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}*/
+.projects-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.container {
+  max-width: 768px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #6A7E72;
+}
+
+.container a i {
+  font-size: 20px;
+}
+
+@media (min-width: 600px) {
+  .box {
+    flex-direction: row;
+  }
+
+  .area {
+    margin-left: 80px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (max-height: 365px) {
+  footer {
+    position: relative;
+    bottom: auto;
+  }
+}

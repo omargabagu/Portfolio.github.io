@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9f2c8bf9d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Developer Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">>About</a></li>
+          <li><a href="#projects">>Projects</a></li>
+          <li><a href="#contact">>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <canvas id="Matrix" class="fundo"></canvas>
+      <div class = contenido>
+        
+      <section id="hero">
+        <h2>Welcome to my portfolio</h2>
+        <p>I'm a developer passionate about creating amazing projects. Take a look at my work below.</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at diam est. Donec tincidunt hendrerit erat id aliquam.</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+      </section><h2>Projects</h2>
+      <section id="pro">
+        <div class="projects-cont">
+          <div class="project">
+            <h3>>EmuZ80</h3>
+            <dic class="impcont">
+              <img src="z80CPU.png" alt="Project 2">
+            </dic>
+            <p>EmuZ80 is an emultor made in c for the Z80 procesor. </p>
+          </div>
+          <div class=">Circular routes">
+            <h3>>Graphs!</h3>
+            <dic class="impcont">
+              <img src="graph.png" alt="Project 2">
+            </dic>
+            
+            <p>Program for finding all possible paths in circular directed graphs with a modified depth-finding algorithm made in C</p>
+          </div>
+          <div class="project">
+            <h3>>Online Boutique</h3>
+            <dic class="impcont">
+              <img src="store.png" alt="Project 2">
+            </dic>
+            
+            <p>>An online store with back and front end made with HTML, JavaScript and PHP.</p>
+          </div>
+      </div>
+      </section>
+      
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="texto">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <input type="message" name="message" required></textarea>
+          
+          <input type="submit" value="Send Message">
+        </form></div>
+      </section>
+    </div>
+    
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Omar Gabriel Aguirre</p>
+        <div>
+          <a href="https://www.linkedin.com/in/jackson-gravino" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCuxdIvvTAu9u9-epyn34nQA"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="https://github.com/JacksonJLGravino" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
